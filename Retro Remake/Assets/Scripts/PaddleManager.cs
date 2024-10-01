@@ -10,7 +10,7 @@ public class PaddleManager : MonoBehaviour
     private KeyCode _upKey;
     private KeyCode _downKey;
 
-    private float _speed = 0.02f;
+    private float _speed = 0.01f;
 
     // Start is called before the first frame update
     void Start()
