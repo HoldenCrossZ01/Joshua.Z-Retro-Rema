@@ -10,7 +10,7 @@ public class PaddleManager : MonoBehaviour
     private KeyCode _upKey;
     private KeyCode _downKey;
 
-    private float _speed = 0.01f;
+    private float _speed = 0.2f;
 
     // Start is called before the first frame update
     void Start()
@@ -29,20 +29,20 @@ public class PaddleManager : MonoBehaviour
     void MoveUp()
     {
         transform.Translate(Vector2.up * _speed);
-        if (transform.position.y > 4f)
+        if (transform.position.y > 5f)
         {
             Vector3 p = transform.position;
-            p.y = 4f;
+            p.y = 5f;
             transform.position = p;
         }
     }
     void MoveDown()
     {
         transform.Translate(-Vector2.up * _speed);
-        if (transform.position.y < -5.20f)
+        if (transform.position.y < -6)
         {
             Vector3 p = transform.position;
-            p.y = -5.20f;
+            p.y = -6;
             transform.position = p;
         }
     }
